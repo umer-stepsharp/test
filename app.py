@@ -1,1 +1,1 @@
-print("work")
+print(1/0)
