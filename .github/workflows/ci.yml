@@ -2,8 +2,8 @@ name: Python CI
 
 on:
   push:
-    branch:
-     -main
+    branches:
+     - main
 
 
 jobs:
@@ -20,7 +20,7 @@ jobs:
           python-version: "3.12"
 
       - name: Verify Python
-        uses: python --version
+        run: python --version
 
       - name: Run Application
-        uses: python app.py  
+        run: python app.py  
